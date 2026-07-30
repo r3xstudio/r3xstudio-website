@@ -31,3 +31,27 @@
     line-height:1.85;
   }
 }
+
+/* Display headings — preserve impact without touching lines */
+.hero h1{
+  line-height:.91;
+  letter-spacing:-.025em;
+}
+.section-heading h2,
+.old-code h2,
+.about h2,
+.shop-callout h2{
+  line-height:.95;
+  letter-spacing:-.025em;
+}
+
+@media (max-width:640px){
+  .hero h1,
+  .section-heading h2,
+  .old-code h2,
+  .about h2,
+  .shop-callout h2{
+    line-height:.94;
+    letter-spacing:-.02em;
+  }
+}

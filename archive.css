@@ -25,5 +25,16 @@
     line-height:1.8;
   }
 }
+
+/* Archive display headings */
+.archive-hero h1,
+.article-hero h1{
+  line-height:.92;
+  letter-spacing:-.025em;
+}
+.latest-lesson h2{
+  line-height:.94;
+  letter-spacing:-.025em;
+}
 /* Article sharing */
 .share-lesson{margin-top:50px;padding:30px;border:1px solid var(--line);background:var(--panel)}.share-lesson h2{margin:0 0 8px;font-size:1.45rem}.share-lesson>p{margin:0 0 20px;color:var(--silver);font-family:Arial,sans-serif;font-size:.9rem}.share-actions{display:flex;flex-wrap:wrap;gap:10px}.share-actions a,.share-actions button{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 16px;color:var(--bone);border:1px solid var(--line);background:transparent;font-family:monospace;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}.share-actions a:hover,.share-actions a:focus-visible,.share-actions button:hover,.share-actions button:focus-visible{border-color:var(--steel);background:#436d8b24}.copy-status{min-height:1.4em;margin:12px 0 0!important;color:var(--silver)!important;font-family:monospace!important;font-size:.7rem!important}
