@@ -55,3 +55,8 @@
     letter-spacing:-.02em;
   }
 }
+
+/* Static WebP asset replaces the former JavaScript-injected background. */
+.shop-callout{
+  background:linear-gradient(#0d0f10e0,#0d0f10f0),url("./assets/raven.webp") 50% 35%/cover;
+}

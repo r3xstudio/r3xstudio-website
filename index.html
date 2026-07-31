@@ -53,9 +53,6 @@
   }
   </script>
   <link rel="stylesheet" href="./styles.css">
-  <script src="./assets/raven.js"></script>
-  <script src="./assets/vegvisir.js"></script>
-  <script src="./assets/norway.js"></script>
 </head>
 <body>
 <main>
@@ -86,9 +83,9 @@
       </div>
     </div>
     <div class="hero-mosaic">
-      <figure class="mosaic-raven"><img data-asset="raven" alt="Distressed raven illustration"></figure>
-      <figure><img data-asset="vegvisir" alt="Blue steel Nordic stave composition"></figure>
-      <figure><img data-asset="norway" alt="Vintage Norwegian mountain badge"></figure>
+      <figure class="mosaic-raven"><img src="./assets/raven.webp" width="1600" height="760" fetchpriority="high" decoding="async" alt="Distressed raven illustration"></figure>
+      <figure><img src="./assets/vegvisir.webp" width="1200" height="1200" decoding="async" alt="Blue steel Nordic stave composition"></figure>
+      <figure><img src="./assets/norway.webp" width="1200" height="1200" decoding="async" alt="Vintage Norwegian mountain badge"></figure>
     </div>
   </section>
 
@@ -102,9 +99,9 @@
       <p>A focused view of the visual territories behind R3X Studio—from Norse symbolism to Norwegian outdoor culture.</p>
     </div>
     <div class="work-grid">
-      <article class="work-card"><div class="work-image"><img data-asset="raven" alt=""><span>01</span></div><p class="card-meta">Apparel / Digital PNG</p><h3>Ravens &amp; Old Gods</h3><p>Graphic compositions built around ravens, runic geometry and the pursuit of wisdom.</p><a href="#disciplines">Explore the collection <span>↘</span></a></article>
-      <article class="work-card"><div class="work-image"><img data-asset="vegvisir" alt=""><span>02</span></div><p class="card-meta">Elder Futhark / Symbols</p><h3>Symbols With Meaning</h3><p>Carefully constructed symbol systems designed as modular elements, not empty decoration.</p><a href="#disciplines">Explore the collection <span>↘</span></a></article>
-      <article class="work-card"><div class="work-image"><img data-asset="norway" alt=""><span>03</span></div><p class="card-meta">Nordic Outdoor</p><h3>Northbound</h3><p>Fjords, mountains and the open road translated into rugged outdoor graphics.</p><a href="#disciplines">Explore the collection <span>↘</span></a></article>
+      <article class="work-card"><div class="work-image"><img src="./assets/raven.webp" width="1600" height="760" loading="lazy" decoding="async" alt=""><span>01</span></div><p class="card-meta">Apparel / Digital PNG</p><h3>Ravens &amp; Old Gods</h3><p>Graphic compositions built around ravens, runic geometry and the pursuit of wisdom.</p><a href="#disciplines">Explore the collection <span>↘</span></a></article>
+      <article class="work-card"><div class="work-image"><img src="./assets/vegvisir.webp" width="1200" height="1200" loading="lazy" decoding="async" alt=""><span>02</span></div><p class="card-meta">Elder Futhark / Symbols</p><h3>Symbols With Meaning</h3><p>Carefully constructed symbol systems designed as modular elements, not empty decoration.</p><a href="#disciplines">Explore the collection <span>↘</span></a></article>
+      <article class="work-card"><div class="work-image"><img src="./assets/norway.webp" width="1200" height="1200" loading="lazy" decoding="async" alt=""><span>03</span></div><p class="card-meta">Nordic Outdoor</p><h3>Northbound</h3><p>Fjords, mountains and the open road translated into rugged outdoor graphics.</p><a href="#disciplines">Explore the collection <span>↘</span></a></article>
     </div>
   </section>
 
@@ -119,7 +116,7 @@
   </section>
 
   <section class="old-code" id="old-code">
-    <div class="old-code-art"><img data-asset="vegvisir" alt=""></div>
+    <div class="old-code-art"><img src="./assets/vegvisir.webp" width="1200" height="1200" loading="lazy" decoding="async" alt=""></div>
     <div class="old-code-copy"><p class="eyebrow">The Old Code / Knowledge archive</p><h2>Symbols deserve context.</h2>
       <p>The Old Code is the growing knowledge side of R3X Studio: runes, Norse symbols, Viking-age culture and the line between historical meaning and modern interpretation.</p>
       <p class="archive-note">The archive is open. Begin with the people behind the legend.</p>
@@ -148,9 +145,5 @@
     <small>© 2026 R3X Studio. All rights reserved.</small>
   </footer>
 </main>
-<script>
-  document.querySelectorAll("[data-asset]").forEach(function(image){image.src=window.R3X_ASSETS[image.dataset.asset]});
-  document.documentElement.style.setProperty("--raven-image",'url("'+window.R3X_ASSETS.raven+'")');
-</script>
 </body>
 </html>
