@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d0f10"/>
+      <stop offset=".58" stop-color="#151819"/>
+      <stop offset="1" stop-color="#183143"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".82" cy=".18" r=".72">
+      <stop offset="0" stop-color="#436d8b" stop-opacity=".52"/>
+      <stop offset="1" stop-color="#436d8b" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3"/>
+      <feColorMatrix values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 .08 0"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect width="1200" height="630" filter="url(#grain)" opacity=".45"/>
+  <path d="M74 79h8v472h-8z" fill="#8b3f32"/>
+  <g fill="none" stroke="#e8e2d4" stroke-width="14">
+    <path d="M936 163v304"/>
+    <path d="M954 181h72c54 0 87 29 87 76 0 37-24 63-63 70l76 140h-60l-69-128h-43v128"/>
+  </g>
+  <path d="M1090 146l23 23-23 23-23-23z" fill="#8b3f32"/>
+  <text x="128" y="176" fill="#a9b0b2" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="7">INDEPENDENT NORDIC DESIGN STUDIO</text>
+  <text x="122" y="316" fill="#e8e2d4" font-family="Impact, Arial Narrow, sans-serif" font-size="108" font-weight="700" letter-spacing="-2">OLD BLOOD.</text>
+  <text x="122" y="414" fill="#e8e2d4" font-family="Impact, Arial Narrow, sans-serif" font-size="108" font-weight="700" letter-spacing="-2">NEW CODE.</text>
+  <text x="128" y="503" fill="#8f9698" font-family="Arial, sans-serif" font-size="26" letter-spacing="3">R3XSTUDIO.COM  /  THE OLD CODE</text>
+</svg>
