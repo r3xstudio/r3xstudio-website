@@ -60,3 +60,20 @@
 .shop-callout{
   background:linear-gradient(#0d0f10e0,#0d0f10f0),url("./assets/raven.webp") 50% 35%/cover;
 }
+
+/* Elemental collection refresh — preserve the energy and material contrast of the artwork. */
+.hero-mosaic img{
+  filter:saturate(.94) contrast(1.07);
+}
+.hero-mosaic figure:hover img{
+  filter:saturate(1.08) contrast(1.13);
+}
+.work-image img{
+  filter:saturate(.88) contrast(1.04);
+}
+.work-card:hover .work-image img{
+  filter:saturate(1.05) contrast(1.08);
+}
+.shop-callout{
+  background:linear-gradient(#0d0f10d4,#0d0f10f2),url("./assets/elemental-vegvisir.webp") 50% 48%/cover;
+}
