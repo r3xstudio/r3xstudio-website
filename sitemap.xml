@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://r3xstudio.com/old-code/</loc>
-    <lastmod>2026-08-01</lastmod>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -45,6 +45,12 @@
   <url>
     <loc>https://r3xstudio.com/old-code/viking-ships-war-trade-travel/</loc>
     <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://r3xstudio.com/old-code/viking-raids-armies-settlement/</loc>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
