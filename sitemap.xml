@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://r3xstudio.com/old-code/</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -63,6 +63,12 @@
   <url>
     <loc>https://r3xstudio.com/old-code/old-norse-religion-ritual-custom/</loc>
     <lastmod>2026-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://r3xstudio.com/old-code/norse-gods-aesir-vanir-roles/</loc>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
