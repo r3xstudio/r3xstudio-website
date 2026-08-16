@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://r3xstudio.com/old-code/</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -129,6 +129,12 @@
   <url>
     <loc>https://r3xstudio.com/old-code/elder-younger-futhark-viking-runes/</loc>
     <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://r3xstudio.com/old-code/viking-runestones-memory-status-christianity/</loc>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
