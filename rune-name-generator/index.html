@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Write a modern name with R3X Studio's 24 Elder Futhark rune artworks. See every mapping choice, copy the Unicode sequence and download a transparent PNG.">
+  <title>Rune Name Generator — Elder Futhark | R3X Studio</title>
+  <link rel="canonical" href="https://r3xstudio.com/rune-name-generator/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/favicon-64.png" sizes="64x64" type="image/png">
+  <meta name="theme-color" content="#0d0f10">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="R3X Studio">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Rune Name Generator — Elder Futhark">
+  <meta property="og:description" content="A transparent, documented modern rendering of your name using 24 original Elder Futhark rune artworks.">
+  <meta property="og:url" content="https://r3xstudio.com/rune-name-generator/">
+  <meta property="og:image" content="https://r3xstudio.com/assets/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rune Name Generator — Elder Futhark">
+  <meta name="twitter:description" content="Enter a name, inspect the mapping and download the rune artwork as a transparent PNG.">
+  <meta name="twitter:image" content="https://r3xstudio.com/assets/social-card.png">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebApplication",
+    "name":"R3X Studio Rune Name Generator",
+    "url":"https://r3xstudio.com/rune-name-generator/",
+    "applicationCategory":"DesignApplication",
+    "operatingSystem":"Any",
+    "browserRequirements":"Requires JavaScript",
+    "description":"A client-side tool for creating a documented modern name rendering with Elder Futhark rune artwork.",
+    "creator":{"@type":"Organization","name":"R3X Studio","url":"https://r3xstudio.com/"}
+  }
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="./generator.css">
+</head>
+<body>
+<main>
+  <header class="site-header generator-header">
+    <a class="brand" href="../"><span class="brand-mark">R</span><span>R3X Studio</span></a>
+    <nav class="desktop-nav"><a href="#generator">Generator</a><a href="#method">Method</a><a href="#rune-row">24 Runes</a><a href="../old-code/">The Old Code</a></nav>
+    <a class="header-etsy" href="https://r3bootxstudio.etsy.com" target="_blank" rel="noopener noreferrer">Etsy</a>
+    <details class="mobile-nav"><summary>Menu</summary><nav><a href="#generator">Generator</a><a href="#method">Method</a><a href="#rune-row">24 Runes</a><a href="../old-code/">The Old Code</a><a href="https://r3bootxstudio.etsy.com">Etsy</a></nav></details>
+  </header>
+
+  <section class="generator-hero">
+    <div>
+      <p class="eyebrow">R3X Tool / Elder Futhark</p>
+      <h1>Your name.<br><span>Written in the Old Code.</span></h1>
+      <p class="generator-lead">Create a modern visual rendering with the complete 24-rune Elder Futhark set. Every choice stays visible. Nothing is presented as a recovered Viking Age spelling.</p>
+      <div class="hero-chips"><span>24 original rune artworks</span><span>Transparent PNG</span><span>Runs in your browser</span></div>
+    </div>
+    <div class="hero-rune" aria-hidden="true"><img src="../assets/runes/15-algiz.png" width="500" height="500" alt=""></div>
+  </section>
+
+  <section class="generator-shell" id="generator">
+    <form class="generator-controls" id="rune-form">
+      <div class="control-heading"><p class="eyebrow">01 / Enter the name</p><h2>Build the sequence</h2></div>
+      <label class="field"><span>Name or short text</span><input id="name-input" name="name" type="text" value="MARCIN" maxlength="24" autocomplete="off" spellcheck="false" aria-describedby="name-help"><small id="name-help">Maximum 24 characters. Short names produce the strongest composition.</small></label>
+      <div class="field-grid">
+        <label class="field"><span>Rendering method</span><select id="render-mode" name="mode"><option value="visual">Visual transliteration</option><option value="sound">Sound-aware approximation (beta)</option></select></label>
+        <label class="field"><span>Pronunciation language</span><select id="language" name="language"><option value="pl">Polish</option><option value="en">English</option><option value="no">Norwegian</option></select></label>
+      </div>
+      <label class="field"><span>Word divider</span><select id="divider" name="divider"><option value="gap">Open space</option><option value="dot">Runic dot</option><option value="none">No divider</option></select></label>
+      <div class="sample-row" aria-label="Example names"><span>Try:</span><button type="button" data-sample="MARCIN" data-language="pl">Marcin</button><button type="button" data-sample="FREYJA" data-language="no">Freyja</button><button type="button" data-sample="ODIN" data-language="no">Odin</button><button type="button" data-sample="ASTRID" data-language="no">Astrid</button></div>
+      <div class="privacy-note"><b>Private by design.</b> The name is processed only in your browser and is not sent to R3X Studio.</div>
+    </form>
+
+    <section class="generator-output" aria-labelledby="result-title">
+      <div class="output-top"><div><p class="eyebrow">02 / Result</p><h2 id="result-title">Modern Elder Futhark rendering</h2></div><span class="method-badge" id="method-badge">Visual transliteration</span></div>
+      <div class="rune-stage" id="rune-stage" aria-live="polite"></div>
+      <div class="result-data">
+        <div><span>Submitted</span><strong id="submitted-value">MARCIN</strong></div>
+        <div><span>Normalized</span><strong id="normalized-value">MARCIN</strong></div>
+        <div><span>Unicode</span><strong class="unicode-result" id="unicode-value">—</strong></div>
+      </div>
+      <div class="decision-log" id="decision-log"></div>
+      <p class="result-warning" id="result-warning">This is a documented modern rendering using Elder Futhark artwork—not an attested historical spelling and not a translation into Old Norse.</p>
+      <div class="output-actions"><button class="button button-primary" type="button" id="download-button">Download transparent PNG <span>↓</span></button><button class="button button-secondary" type="button" id="copy-button">Copy Unicode <span>⧉</span></button></div>
+      <p class="action-status" id="action-status" aria-live="polite"></p>
+    </section>
+  </section>
+
+  <section class="method-section" id="method">
+    <div class="method-intro"><p class="eyebrow">03 / Read the method</p><h2>Clear rules.<br>No false certainty.</h2></div>
+    <div class="method-grid">
+      <article><span>01</span><h3>Visual transliteration</h3><p>Maps modern letters to the closest available Elder Futhark signs. Common pairs such as <i>th</i> and <i>ng</i> can use one historical character.</p></article>
+      <article><span>02</span><h3>Sound-aware approximation</h3><p>Applies a limited set of common Polish, English or Norwegian pronunciation rules before selecting signs. It remains an approximation.</p></article>
+      <article><span>03</span><h3>Elder, not Younger</h3><p>These 24 signs belong to Elder Futhark, an earlier Germanic rune row. Viking Age Scandinavians usually used the 16-rune Younger Futhark.</p></article>
+      <article><span>04</span><h3>Modern output</h3><p>A contemporary name without an attested ancient spelling cannot be recovered automatically. The generator shows its method instead of inventing certainty.</p></article>
+    </div>
+    <a class="method-link" href="../old-code/write-name-viking-runes-younger-futhark/">Read the full historical guide in The Old Code <span>→</span></a>
+  </section>
+
+  <section class="rune-reference" id="rune-row">
+    <div class="reference-heading"><div><p class="eyebrow">04 / Complete set</p><h2>The 24 Elder Futhark runes</h2></div><p>Original R3X Studio Lava Edition artwork. Historical signs and rune names; the material treatment is a contemporary visual interpretation.</p></div>
+    <div class="rune-grid" id="rune-grid"></div>
+  </section>
+
+  <section class="generator-cta"><p class="eyebrow">Personalised R3X artwork</p><h2>Turn the result into a design.</h2><p>The public generator creates a transparent preview. Personalised apparel and finished compositions can use the same declared rune sequence.</p><a class="button button-primary" href="https://r3bootxstudio.etsy.com" target="_blank" rel="noopener noreferrer">Explore R3X Studio on Etsy <span>↗</span></a></section>
+
+  <footer><a class="brand footer-brand" href="../"><span class="brand-mark">R</span><span>R3X Studio</span></a><p>Old Blood. New Code.</p><div><a href="../">Studio</a><a href="../old-code/">The Old Code</a><a href="https://r3bootxstudio.etsy.com">Etsy</a></div><div class="social-links" aria-label="Follow R3X Studio"><a href="https://www.instagram.com/r3bootstudio/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.facebook.com/profile.php?id=61584413465191" target="_blank" rel="noopener noreferrer">Facebook ↗</a><a href="https://pl.pinterest.com/R3XStudio/" target="_blank" rel="noopener noreferrer">Pinterest ↗</a><a href="https://x.com/marcin_rietz" target="_blank" rel="noopener noreferrer">X ↗</a></div><small>© 2026 R3X Studio. Modern rendering with historical context.</small></footer>
+</main>
+<script src="./generator.js"></script>
+</body>
+</html>
